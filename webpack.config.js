@@ -5,7 +5,7 @@ const babel = require('@babel/core')
 module.exports = {
   mode:'development',
   watch:true,
-  entry:'./src/app.js',
+  entry:'./src/miniprogram/app.js',
   output:{
     path:path.resolve(__dirname,'dist'),
   },
