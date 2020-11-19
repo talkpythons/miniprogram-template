@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="content">
+    <view class="title">总币数</view>
+    <view class="coins">{{coins}}</view>
+    <view class="income dis-flex flex-x-around">
+      <view class="left">
+        <view class="title">累计收益</view>
+        <view class="num">{{userInfo.balance}}</view>
+      </view>
+      <view class="right">
+        <view class="title">昨日收益</view>
+        <view class="num">{{userInfo.last_balance}}</view>
+      </view>
+    </view>
+    <view class="btn dis-flex flex-x-around">
+      <button bindtap="toDetail" disabled="{{disabled}}">详情</button>
+      <button bindtap="toWithDraw" disabled="{{disabled}}">提现</button>
+    </view>
+  </view>
+  <view class="info">
+    <view class="title">
+      {{coinsInfo.conins_name}}说明：
+    </view>
+    <view class="detail">
+      <text>
+        {{coinsInfo.describe}}
+      </text>
+    </view>
+  </view>
+</view>

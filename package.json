@@ -1,0 +1,21 @@
+{
+  "name": "miniprogram-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start":"rm -rf ./dist/* && webpack --config webpack.config.js"
+  },
+  "author": "talkpython",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "copy-webpack-plugin": "^6.3.1",
+    "less": "^3.12.2",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0"
+  }
+}

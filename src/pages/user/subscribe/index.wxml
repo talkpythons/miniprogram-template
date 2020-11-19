@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="common-header-xian"></view>
+
+  <form bindsubmit="saveData" report-submit="true" class="form">
+    <view class="address-cont-title b-f b-b">
+
+      <view class="title">
+          <view class="row f-40">剩余金额</view>
+          <view class="row f-40">{{info.spare}}</view>
+      </view>
+
+      <view class="dis-flex list address-box">
+        <view class="left-name">
+          <text class="f-30">认购金额</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="money" minlength="6" placeholder="请输入认购金额" value="{{money}}" type="number" />
+        </view>
+      </view>
+
+    </view>
+    <view class="padding-box m-top35 btn-green btn-sm">
+      <button formType="submit" disabled="{{disabled}}">立即认购</button>
+    </view>
+  </form>
+
+  <!--已认购明细 -->
+  <view class="list">
+    <view class="title">已认购明细</view>
+    <view wx:for="{{ list }}" wx:key="this" class="items dis-flex flex-x-between f-28">
+      <text class="flex-box">{{item.name}}</text>
+      <text class="flex-box">{{item.date}}</text>
+      <text class="flex-box">￥{{item.money}}</text>
+      <text class="flex-box">{{item.precent}}%</text>
+    </view>
+  </view>
+  
+  <!-- 认购说明 -->
+  <view class="intro">
+    <view class="title f-36">大众股权认购细则：</view>
+    <view>
+    <!-- {{info.describe}}-->
+      <text class="f-28">
+        1.本次认购大众股权总金额为我司2000万元人民币市值的5%，即100万元人民币。
+        2.个人认购金额五万元起，即最低认购我司0.25%股权。
+        3.认购成功后，股权立即生效。
+        4.持股者享有我司大众股权相应的收益权。
+        5.持股者持股满6个月后可根据公司市值行情选择转让股权。
+	      6.如您存在任何疑问，请拨打客服电话详询18910415051。
+      </text>
+    </view>
+  </view>
+</view>
+
+<!-- 快捷导航 -->
+<shortcut></shortcut>

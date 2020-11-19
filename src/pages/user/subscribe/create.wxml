@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="common-header-xian"></view>
+
+
+
+  <!-- 份额 -->
+  <view class="info">
+    <view class="row dis-flex flex-x-between flex-y-center">
+      <text>认购金额</text>
+      <text>￥ {{ money }}</text>
+    </view>
+    <view class="row dis-flex flex-x-between flex-y-center">
+      <text>持股比例</text>
+      <text>{{ percent }} %</text>
+    </view>
+  </view>
+
+  <!-- 表单 -->
+  <form bindsubmit="saveData" report-submit="true">
+    <view class="address-cont-title b-f b-b">
+      <view class="dis-flex list address-box">
+        <view class="left-name">
+          <text class="f-30">姓名</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="name" placeholder="请输入姓名" type="text"></input>
+        </view>
+      </view>
+      <view class="dis-flex list address-box">
+        <view class="left-name">
+          <text class="f-30">身份证</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="idcard" placeholder="请输入您的身份证" maxlength="18" type="idcard"></input>
+        </view>
+      </view>
+      <view class="list address-box dis-flex">
+        <view class="left-name">
+          <text class="f-30">手机号</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="phone" placeholder="请输入联系电话" maxlength="11"  type="number"></input>
+        </view>
+      </view>
+      <view class="dis-flex list address-box">
+        <view class="left-name">
+          <text class="f-30">邮箱</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="email" placeholder="请输入您的邮箱" type="email"></input>
+        </view>
+      </view>
+    </view>
+    <view class="padding-box m-top35 btn-green btn-sm">
+      <button formType="submit" disabled="{{disabled}}">提交认购</button>
+    </view>
+  </form>
+
+
+</view>
+
+<!-- 快捷导航 -->
+<shortcut></shortcut>

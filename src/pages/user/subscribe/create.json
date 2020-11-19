@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "认购中心",
+    "usingComponents": {
+      "shortcut": "/components/shortcut/shortcut"
+    }
+}

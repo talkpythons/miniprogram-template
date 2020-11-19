@@ -1,0 +1,9 @@
+<!-- 优惠券组 -->
+<view class="diy-coins" wx:if="{{ dataList }}">
+  <view class="dis-flex flex-dir-column flex-x-center flex-y-center" catchtap="navigationTo" data-url="{{ params.linkUrl }}" style="background: {{ itemStyle.background }}; color: {{ itemStyle.color }}; height: {{ itemStyle.height }}px" bindsubmit="onTargetCoins" report-submit="true">
+    <view>{{ dataList.nick_name }}</view>
+    <view>总币数：{{ dataList.coins_num }} 个</view>
+  </view>
+</view>
+
+

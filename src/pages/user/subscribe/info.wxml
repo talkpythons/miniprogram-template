@@ -1,0 +1,21 @@
+<view class="container">
+
+  <view class="info" wx:if="{{total > 0}}">
+    <view class="row">
+      <text class="f-30">认购余额</text>
+      <text class="f-30">{{total}}</text>
+    </view>
+    <view class="row">
+      <text class="f-30">认购比例</text>
+      <text class="f-30">{{percent}} %</text>
+    </view>
+  </view>
+
+  <view class="tip">
+      <text>{{infoText}}</text>
+  </view>
+
+</view>
+
+<!-- 快捷导航 -->
+<shortcut></shortcut>

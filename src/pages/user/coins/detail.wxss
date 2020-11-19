@@ -1,0 +1,61 @@
+page, .container {
+  background: #fff;
+}
+
+
+/* 选项卡 */
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 80rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.swiper-tab .swiper-tab-item {
+  width: 50%;
+  height: 100%;
+  font-size: 28rpx;
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ffffff00;
+}
+
+.swiper-tab .on {
+  color: #f74c45;
+  border-bottom: 2px solid #f74c45;
+}
+
+
+.order-item {
+  font-size: 28rpx;
+  padding: 20rpx 20rpx;
+  line-height: 1.8;
+  border-bottom: 1rpx solid rgb(238, 238, 238);
+}
+
+.item-left {
+  width: 150rpx;
+  overflow: hidden;
+}
+.item-left image {
+  width: 40px;
+  height: 40px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+}
+.item-left text {
+  color: #333;
+}
+.rec-status {
+  color: #333;
+}
+
+.order-item .rec-time {
+  color: rgb(160, 160, 160);
+  font-size: 26rpx;
+}

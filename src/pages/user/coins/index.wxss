@@ -1,0 +1,78 @@
+page {
+  background: #fff;
+  
+}
+.container {
+  padding: 50rpx 50rpx;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom,rgba(255, 153, 50, 0.952) 0%, rgba(255,255,2550,1) 50%);
+  border-end-end-radius: 10rpx;
+}
+
+.content {
+  background: #fff;
+  padding: 40rpx;
+  text-align: center;
+  border: 1rpx solid #eee;
+}
+
+.content .title {
+  margin-top: 40rpx;
+  color: #999;
+  font-size: 30rpx;
+}
+.content .coins {
+  color: black;
+  font-size: 60rpx;
+}
+
+.content .income {
+  margin-top: 30rpx;
+  color: #666;
+  font-size: 25rpx;
+}
+
+
+.content .income .num {
+  color: black;
+  font-size: 30rpx;
+}
+
+.content .btn {
+  margin-top: 30rpx;
+}
+.content .btn button {
+  width: 40%;
+}
+
+.content .btn button:nth-child(1) {
+  border: 1rpx solid rgba(255, 153, 50, 1);
+  background: #fff;
+  color: rgba(255, 153, 50, 1);
+}
+
+.content .btn button:nth-child(2) {
+  background:rgba(255, 153, 50, 1);
+  color: #fff;
+}
+
+.info {
+  margin-top: 30rpx;
+}
+
+.info .title {
+  color: #333;
+  padding: 20rpx 0;
+}
+
+.info .detail {
+  color: #99CC33;
+}
+
+
+
+
+
+
+
